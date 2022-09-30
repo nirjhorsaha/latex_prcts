@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tabu}
+\usepackage{multirow}
+
+\begin{document}
+
+%combine row and column
+\centering
+\textbf{Table-5: Combine column}
+\begin{center}
+
+\begin{tabular}{ |m{2cm}||m{2cm}||m{2cm}| }
+
+\hline
+\multicolumn{3}{|c|}{Multi Column} \\
+
+\hline
+Column-1 &  Column-2 &  Column-3 \\
+
+\hline
+cell1 & cell2 & cell3 \\
+
+cell4 & cell5 & cell6 \\
+
+cell7 & cell8 & cell9 \\ 
+
+\hline
+
+\end{tabular}
+\end{center}
+
+
+%row combine
+\centering
+\textbf{Table-6: Combine row}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| }
+
+\hline
+col1 & col2 & col3 \\
+
+\hline
+\multirow{3}{4em}{Combine three row} & cell2 & cell3 \\
+
+& cell5 & cell6 \\
+
+& cell8 & cell9 \\
+
+\hline
+
+\end{tabular}
+\end{center}
+
+\end{document}

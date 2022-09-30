@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tabu}
+\usepackage{multirow}
+
+\begin{document}
+
+\centering 
+\textbf{Table with lable and Referance}
+
+\begin{table}[h!] %Table environment
+\centering 
+\begin{tabular}{||c | c | c | c||} 
+\hline 
+%Row and height []
+Col1 & Col2 & Col2 & Col3 \\ [2ex] 
+\hline\hline 
+1 & 6 & 11 & 16 \\ 
+2 & 7 & 12 & 17 \\ 
+3 & 8 & 13 & 18 \\ 
+4 & 9 & 14 & 19 \\ 
+5 & 10 & 15 & 20 \\ 
+\hline 
+\end{tabular} 
+\caption{Table to test captions and labels} %table caption
+\label{table:data}
+%To use the table label tag, first write " table: ", then give the actual label without spaces.
+
+%refer a table
+Table \ref{table:data} is an example of referenced \LaTeX{} elements.
+
+\end{table}
+\end{document}
