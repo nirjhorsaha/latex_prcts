@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig} %Allows figures or tables to have text wrapped around them.
+\graphicspath{{img/}}
+
+\begin{document}
+
+\begin{center}
+    \Large \underline {Wrap Positioning}
+\end{center}
+
+\section{Right Position} 
+
+% For right alignent {r}
+\begin{wrapfigure}{r}{0.5\textwidth} %figure box size
+\centering 
+\includegraphics[width=0.25\textwidth]{Lorem} %image size
+\end{wrapfigure} 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+
+\section{Left Position} 
+
+\begin{wrapfigure}{l}{0.25\textwidth} % For left alignent {r}
+\centering 
+\includegraphics[width=0.25\textwidth]{Lorem}
+\end{wrapfigure} 
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+\end{document}
